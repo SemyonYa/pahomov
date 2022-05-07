@@ -1,0 +1,96 @@
+* {
+    --yellow: #fec80b;
+    --grey: #a2a2a2;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    /* gap: 12px; */
+}
+
+.row {
+    display: flex;
+    /* gap: 12px; */
+}
+
+.header2 {
+    /* position: fixed;
+    top: 150px;
+    right: 0;
+    left: 0; */
+    height: 70px;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 9px 60px;
+
+    border: solid 1px #ccc;
+}
+
+@media (max-width: 1100px) {
+    .header2 {
+        height: auto;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+.header2-left {
+    align-items: center;
+}
+
+.header2-left p {
+    border-left: solid 2px var(--yellow);
+    padding-left: 8px;
+    margin-left: 8px;
+    line-height: 1;
+}
+
+.header2-right {
+    align-items: center;
+    gap: 24px;
+}
+
+.header2-right-info {
+    align-items: flex-end;
+}
+.header2-right-info-time {
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.header2-right-info-time:hover {
+    color: red;
+}
+
+.header2-right-info-time svg {
+    color: var(--yellow);
+    transition: 0.5s;
+    margin-left: 4px;
+}
+
+.header2-right-info-time:hover svg {
+    color: red;
+    transform: rotate(180deg);
+}
+.phones-info {
+    color: var(--grey);
+}
+.phones-info a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.header2-right-phones {
+    align-items: flex-end;
+}
+/* 
+@mixin qwerty() {
+    color: red;
+    padding: 12px;
+}
+
+.new-class {
+    @include(qwerty);
+} */
